@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --clr-white: #fff;
+  --clr-grey: rgba(255, 255, 255, 0.6);
+  --clr-black: #000;
+  --clr-brown: #c77e6b;
+  --clr-primary: #107da6;
+  --clr-secondary: #101415;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*================== Global  Styles =================*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*================== Header Section ===================*/
+
+.header {
+  background: url("img/Section\ 1\ rectangle.png") no-repeat;
+}
+
+.logo {
+  width: 6%;
+  margin: 2.5rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 2.8rem;
+  background: var(--clr-primary);
+}
+
+nav a {
+  color: var(--clr-white);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 0.6rem;
+  display: block;
+}
+
+nav a:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-brown);
+}
+
+ul li a.style {
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.header h1 {
+  font-size: 42px;
+  color: var(--clr-white);
+  margin-top: 4rem;
+}
+
+.header p {
+  color: var(--clr-grey);
+  font-size: 24px;
+}
+
+.header .book1 {
+  margin-right: 2.6rem;
+}
+
+/*********** Media Query ************/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .header .logo {
+    width: 10%;
+  }
+
+  .header .book1 {
+    width: 20%;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  .header nav a {
+    font-size: 16px;
+  }
+
+  .header .textBox {
+    margin-bottom: 3.8rem;
+  }
+}
+
+/* Screen Size : 360px */
+
+/*==================== About Section ==================*/
+
+.about {
+  padding: 2rem;
+}
+
+.aboutCol {
+  flex-basis: 49%;
+  text-align: left;
+  margin: auto;
+}
+
+.about .book2 {
+  width: 20%;
+  margin: 3rem auto;
+}
+
+.about h2 {
+  font-size: 26px;
+}
+
+.about h3 {
+  color: var(--clr-brown);
+}
+
+.about p {
+  font-size: 16px;
+  width: 90%;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.8rem 3rem;
+  font-size: 21px;
+}
+
+.btn:hover {
+  background-color: var(--clr-white);
+  border: solid 2px var(--clr-brown);
+  color: var(--clr-brown);
+  transition: 0.3s;
+  font-size: 21px;
+}
+
+/*********** Media Query ************/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .about .book2 {
+    width: 180px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+  }
+
+  .about h3 {
+    font-size: 18px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+}
+
+/*=============== Testimonials Section ================*/
+
+.testimonials {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 3rem;
+}
+
+.testimonialsCol {
+  flex-basis: 32%;
+  margin-top: 3rem;
+  padding: 1.6rem;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border-radius: 10px;
+}
+
+.testimonialsCol:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.testimonials h2 {
+  font-size: 32px;
+}
+
+.testimonialsCol h3 {
+  margin-top: 1rem;
+}
+
+/*********** Media Query ************/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding: 1.5rem;
+  }
+  .testimonials h2 {
+    font-size: 22px;
+  }
+
+  .testimonials h3 {
+    font-size: 16px;
+  }
+
+  .testimonials p,
+  li {
+    font-size: 14px;
+  }
+
+  .testimonialsCol {
+    padding: 0.6rem;
+  }
+}
+
+/*======= Footer Section =======*/
+
+.footer {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  padding: 3rem;
+}
+
+.footer .row {
+  justify-content: space-between;
+}
+
+.footer h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.info img {
+  width: 40%;
+}
+
+.icon i {
+  color: var(--clr-white);
+}
+
+/* Form Styles */
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  padding: 0.8rem;
+  margin: 0.4rem;
+  display: block;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  margin-left: 0;
+}
+
+input[type="submit"] {
+  padding: 0.9rem 1.3rem;
+  font-size: 18px;
+  width: 55%;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  transition: 0.5s;
+  border: 1px solid var(--clr-primary);
+}
+
+textarea[placeholder="Your Message"] {
+  text-align: left;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+/*********** Media Query ************/
+
+/* Screen Size : 768px */
+
+@media screen and (max-width: 768px) {
+  .footer h3 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer .info {
+    align-self: center;
+    margin-left: 5.6rem;
+  }
+
+  .footer .siteMap {
+    margin-left: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 80%;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    width: 44%;
+  }
+}
+
+/*======= Copyright Section =======*/
+
+.copyright {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1rem;
+}
+
+/*********** Media Query 360 px ************/
+
+@media screen and (max-width: 360px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .header p,
+  .header h1 {
+    text-align: center;
+  }
+
+  .book1,
+  .book2 {
+    width: 150px !important;
+    margin: 0 !important;
+  }
+
+  .logo {
+    width: 100px !important;
+  }
+
+  .textBox h1 {
+    margin-top: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .aboutCol {
+    text-align: center;
+  }
+
+  .aboutCol h2 {
+    margin-top: 1.74rem;
+  }
+
+  .info,
+  .siteMap,
+  .form {
+    margin-top: 1.74rem;
+    align-self: flex-start !important;
+  }
+
+  .info {
+    margin-left: 0 !important;
+  }
+}

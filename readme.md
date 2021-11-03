@@ -14,7 +14,7 @@
 
 [(Back to top)](#table-of-contents)
 <img src="Maquette/Home page.png">
-<img src="Maquette/360.png">
+<img src="Maquette/360px.png">
 
 <!-- # Links
 

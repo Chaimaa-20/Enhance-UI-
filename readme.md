@@ -1,6 +1,6 @@
 <!-- Add banner here -->
 
-# Frontend Developement - Enhance UI
+# Responsive Website - Enhance UI
 
 ## Table of contents
 
